@@ -1,0 +1,40 @@
+main.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+
+main.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+#ninja-list li.ng-enter {
+  transition: 0.25s linear all;
+  opacity: 0;
+
+  transform: translateY(30px);
+}
+
+#ninja-list li.ng-enter.ng-enter-active {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+#ninja-list li.ng-leave {
+  transition: 0.25s linear all;
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+#ninja-list li.ng-leave.ng-leave-active {
+  opacity: 0;
+
+  transform: translateX(-100%);
+}
+
+#ninja-list li.ng-leave-stagger {
+  transition-delay: 0.25s;
+
+  transition-duration: 0;
+}
